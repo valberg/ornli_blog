@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="row-fluid">
+    <div class="span9">
+        <h3>{{ post.title }}</h3>
+
+        <span class="label label-inverse">
+            <i class="icon-calendar icon-white"></i> {{ post.created }}
+        </span><br /><br />
+
+        <div class="post-content">
+        {{ post.content }}
+        </div>
+    </div>
+    <div class="span3">
+        Some extra data about the article?
+    </div>
+</div>
+{% endblock %}

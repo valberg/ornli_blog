@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>orn.li/blog</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style type="text/css" media="screen">
+        body
+        {
+            overflow-y: scroll;
+            font-size: 16px;
+        }
+
+        #main
+        {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .post-content
+        {
+            text-align: justify;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main">
+
+        <div class="page-header">
+            <h2>orn.li/blog <small>to the web and beyond</small></h2>
+        </div>
+
+        <div class="container-fluid">
+        {% block content %}
+        {% endblock %}
+        </div>
+
+    </div>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"> </script>
+</body>
+</html>
