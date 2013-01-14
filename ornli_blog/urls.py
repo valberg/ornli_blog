@@ -7,5 +7,5 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('blog.urls', namespace='blog', app_name='blog')),
+    url(r'^/', include('blog.urls', namespace='blog', app_name='blog')),
 )
