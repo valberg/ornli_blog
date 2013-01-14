@@ -3,7 +3,7 @@
 import markdown
 import os
 
-root = lambda x: os.path.join(os.path.dir(__FILE__), x)
+root = lambda x: os.path.join(os.path.dir(__file__), x)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
