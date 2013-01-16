@@ -1,6 +1,7 @@
 from django.db import models
 from markupfield.fields import MarkupField
 from model_utils.models import TimeStampedModel
+from django.core.urlresolvers import reverse
 
 class Post(TimeStampedModel):
     title = models.CharField(
@@ -13,3 +14,6 @@ class Post(TimeStampedModel):
 
     def __unicode__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('blog:post-detail', kwargs={'slug': self.slug})

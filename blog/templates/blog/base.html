@@ -21,6 +21,12 @@
             text-align: justify;
         }
 
+        .feed
+        {
+            margin-left: 3px;
+            padding: 0 0 0 19px;
+            background: url("/blog/static/img/feed-icon-14x14.png") no-repeat 0 50%;
+        }
     </style>
 
 </head>
@@ -38,5 +44,18 @@
 
     </div>
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"> </script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+    var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.orn.li/" : "http://stats.orn.li/");
+    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script type="text/javascript">
+    try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 4);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+    } catch( err ) {}
+    </script><noscript><p><img src="http://stats.orn.li/piwik.php?idsite=4" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tracking Code -->
 </body>
 </html>

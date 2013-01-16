@@ -24,6 +24,18 @@
         <small>
         {% chunk 'blog_description' %}
         </small>
+
+        <hr />
+
+        <strong>Feeds</strong><br />
+
+        <a href="{% url blog:rss-feed %}" class="feed">
+            <small>RSS feed</small>
+        </a><br />
+
+        <a href="{% url blog:atom-feed %}" class="feed">
+            <small>Atom feed</small>
+        </a><br />
     </div>
 </div>
 {% endblock %}
